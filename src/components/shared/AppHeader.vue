@@ -85,18 +85,11 @@ export default {
 				<!-- Header logos -->
 				<div>
 					<router-link to="/"
-						><img
-							v-if="theme === 'light'"
-							src="@/assets/images/logo_w.svg"
-							class="w-36"
-							alt="Dark Logo"
-						/>
-						<img
-							v-else
-							src="@/assets/images/logo_dark.svg"
-							class="w-36"
-							alt="Light Logo"
-						/>
+						>
+						<span :class="theme== 'light' ? 'text-black' : 'text-white'">
+							<strong>W</strong>elen
+						</span>
+						
 					</router-link>
 				</div>
 
