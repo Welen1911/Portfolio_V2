@@ -6,13 +6,13 @@ export default {
 
 <template>
 	<router-link
-		to="/projects/single-project"
+		:to="`/projects/single-project/${project.id}`"
 		class="rounded-xl shadow-lg hover:shadow-xl cursor-pointer mb-10 sm:mb-0 bg-secondary-light dark:bg-ternary-dark"
 		aria-label="Single Project"
 	>
 		<div>
 			<img
-				:src="project.img"
+				:src="project.img[0]"
 				:alt="project.title"
 				class="rounded-t-xl border-none"
 			/>
